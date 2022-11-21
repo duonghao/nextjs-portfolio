@@ -1,0 +1,26 @@
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+
+const Hero = () => {
+  return (
+    <div className='pl-16 pr-96'>
+
+        <div className=''>
+            <div className='flex flex-col gap-4'>
+                <h1 className='text-3xl font-bold'>Mechanical engineer by day, aspiring software engineer by night.</h1>
+                <p>
+                    I'm Hao, a mechanical and software engineer based in Adelaide, Australia.
+                </p>
+                <div className='flex justify-start gap-4'>
+                    <FontAwesomeIcon icon={faLinkedin} size='lg'/>
+                    <FontAwesomeIcon icon={faGithub} size='lg'/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  )
+}
+
+export default Hero
