@@ -1,27 +1,23 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faPython, faJava, faSquareJs } from '@fortawesome/free-brands-svg-icons'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
 import CardLayout from './cardlayout'
+import { languages } from '../constants'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
+
 
 const SkillCard = () => {
   return (
    <CardLayout icon={faCode} title='Languages'>
         <ul className='flex gap-4'>
-          <li>
-            <FontAwesomeIcon icon={faReact} size='2x'/>
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faPython} size='2x'/>
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faJava} size='2x'/>
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faSquareJs} size='2x'/>
-          </li>
-        </ul>
-        
+          {languages.map((language, index) => (
+            <li
+              key={language.id}
+            >
+              <FontAwesomeIcon icon={language.icon} size='2x'/>
+            </li>
+          ))}
+        </ul> 
     </CardLayout>
   )
 }

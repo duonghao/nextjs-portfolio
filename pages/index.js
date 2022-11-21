@@ -10,21 +10,17 @@ import Footer from '../components/footer'
 
 export default function Home() {
   return (
-    <div className='px-96 h-screen bg-zinc-50'>
-      <div className=' bg-white h-full py-4'>
-        <div>
+    <div className='flex h-screen w-screen'>
+      <div className='flex-1 bg-zinc-50'></div>
+      <div className='grow-0 shrink basis-[1280px] bg-white h-full py-4 px-16 flex flex-col gap-16'>
           <Navbar></Navbar>
-          <div className='my-16'>
-            <Hero></Hero>
-          </div>
-          <div className='-mx-32 gap-16 my-16'>
-            <ImageBanner></ImageBanner>
-          </div>
-          <div className='my-16 px-16 flex gap-16'>
-            <div className='flex-1'>
+          <Hero></Hero>
+          <ImageBanner></ImageBanner>
+          <div className='flex flex-wrap gap-16'>
+            <div className='grow shrink-0 basis-96'>
               <Posts></Posts>
             </div>
-            <div className='flex-1 flex flex-col gap-4'>
+            <div className='grow shrink-0 basis-96 flex flex-col gap-4'>
               <div>
                 <JobCard></JobCard>
               </div>
@@ -34,8 +30,8 @@ export default function Home() {
             </div>
           </div>
           <Footer></Footer>
-        </div>
       </div>
+      <div className='flex-1 bg-zinc-50'></div>
     </div>
   )
 }
