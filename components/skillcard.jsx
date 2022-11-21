@@ -6,13 +6,7 @@ import CardLayout from './cardlayout'
 
 const SkillCard = () => {
   return (
-   <CardLayout>
-        <div className='flex items-center gap-4 mb-4'>
-            <FontAwesomeIcon icon={faCode} size='lg'/>
-            <h1 className='text-s font-semibold'>
-                Languages
-            </h1>
-        </div>
+   <CardLayout icon={faCode} title='Languages'>
         <ul className='flex gap-4'>
           <li>
             <FontAwesomeIcon icon={faReact} size='2x'/>

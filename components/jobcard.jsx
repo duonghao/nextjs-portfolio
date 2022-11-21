@@ -7,13 +7,7 @@ import CardLayout from './cardlayout'
 
 const JobCard = () => {
   return (
-    <CardLayout>
-        <div className='flex items-center gap-4 mb-4'>
-            <FontAwesomeIcon icon={faBriefcase} size='lg'/>
-            <h1 className='text-s font-semibold'>
-                Work
-            </h1>
-        </div>
+    <CardLayout icon={faBriefcase} title='Work'>
         <ul>
             {jobs.map((job, index) => (
                 <li
