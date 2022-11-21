@@ -1,13 +1,18 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact, faPython, faJava, faSquareJs } from '@fortawesome/free-brands-svg-icons'
-
+import { faCode } from '@fortawesome/free-solid-svg-icons'
+import CardLayout from './cardlayout'
 
 const SkillCard = () => {
   return (
-
-    <div className='p-4 border-2 rounded-md'>
-        <h1 className='mb-4'>Skills</h1>
+   <CardLayout>
+        <div className='flex items-center gap-4 mb-4'>
+            <FontAwesomeIcon icon={faCode} size='lg'/>
+            <h1 className='text-s font-semibold'>
+                Languages
+            </h1>
+        </div>
         <ul className='flex gap-4'>
           <li>
             <FontAwesomeIcon icon={faReact} size='2x'/>
@@ -23,7 +28,7 @@ const SkillCard = () => {
           </li>
         </ul>
         
-    </div>
+    </CardLayout>
   )
 }
 

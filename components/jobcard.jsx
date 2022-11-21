@@ -3,11 +3,12 @@ import { jobs } from '../constants'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import CardLayout from './cardlayout'
 
 const JobCard = () => {
   return (
-    <div className='p-4 border rounded-md'>
-        <div className='flex items-center gap-4'>
+    <CardLayout>
+        <div className='flex items-center gap-4 mb-4'>
             <FontAwesomeIcon icon={faBriefcase} size='lg'/>
             <h1 className='text-s font-semibold'>
                 Work
@@ -40,7 +41,7 @@ const JobCard = () => {
                 </li>
             ))}
         </ul>
-    </div>
+    </CardLayout>
   )
 }
 
