@@ -7,12 +7,11 @@ import Posts from '../components/posts'
 import JobCard from '../components/jobcard'
 import SkillCard from '../components/skillcard'
 import Footer from '../components/footer'
+import Layout from '../components/layout'
 
 export default function Home() {
   return (
-    <div className='flex h-screen w-screen'>
-      <div className='flex-1 bg-zinc-50'></div>
-      <div className='grow-0 shrink basis-[1280px] bg-white h-full py-4 px-16 flex flex-col gap-16'>
+    <Layout>
           <Navbar></Navbar>
           <Hero></Hero>
           <ImageBanner></ImageBanner>
@@ -30,8 +29,6 @@ export default function Home() {
             </div>
           </div>
           <Footer></Footer>
-      </div>
-      <div className='flex-1 bg-zinc-50'></div>
-    </div>
+    </Layout>
   )
 }
