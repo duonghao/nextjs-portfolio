@@ -15,15 +15,10 @@ const JobCard = () => {
                 >
                     <div className='flex items-center my-4'>
                         <div className='w-16 h-8 mr-4 relative'>
-                            <Image
-                                alt='logo' 
-                                objectFit='contain'
-                                layout='fill'
-                                src={job.logo.src}
-                            />
+                            <job.Logo fill className='fill-black'></job.Logo>
                         </div>
                         <div className='flex-1'>
-                            <h1 className='text-md font-semibold'>
+                            <h1 className='text-md font-semibold pr-36'>
                                 {job.company}
                             </h1>
                             <div className='flex justify-between gap-8'>

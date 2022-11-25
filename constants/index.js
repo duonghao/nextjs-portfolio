@@ -1,17 +1,17 @@
-import { babcock, dstg } from "../public";
+import { Babcock, Dstg } from "../public";
 import { faReact, faPython, faJava, faSquareJs } from '@fortawesome/free-brands-svg-icons'
 
 export const jobs = [
     {
         id: 'job-1',
-        logo: babcock,
+        Logo: Babcock,
         company: 'Babcock',
         position: 'Mechanical Engineer',
         date: '2020-2022',
     },
     {
         id: 'job-2',
-        logo: dstg,
+        Logo: Dstg,
         company: 'Defence Science and Technology Group (DSTG)',
         position: 'Small Satellites Experimentation Team Placement',
         date: '2017-2019',
