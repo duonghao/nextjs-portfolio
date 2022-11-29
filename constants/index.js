@@ -40,3 +40,31 @@ export const languages = [
         icon: faJava,
     },
 ];
+
+export const projects = [
+    {
+        id: 'p-1',
+        title: 'project 1',
+        icon: faPython,
+    },
+    {
+        id: 'p-2',
+        title: 'project 2',
+        icon: faPython,
+    },
+    {
+        id: 'p-3',
+        title: 'project 3',
+        icon: faPython,
+    },
+    {
+        id: 'p-4',
+        title: 'project 4',
+        icon: faPython,
+    },
+    {
+        id: 'p-5',
+        title: 'project 5',
+        icon: faPython,
+    }
+]
