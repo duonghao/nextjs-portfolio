@@ -7,7 +7,7 @@ const Hero = () => {
     <div className='pr-[20%]'>
         <div className=''>
             <div className='flex flex-col gap-4'>
-                <h1 className='text-3xl font-bold'>
+                <h1>
                     Mechanical engineer by day, aspiring software engineer by night.
                 </h1>
                 <p>

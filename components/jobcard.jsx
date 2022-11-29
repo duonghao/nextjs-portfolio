@@ -18,9 +18,9 @@ const JobCard = () => {
                             <job.Logo fill className='fill-black'></job.Logo>
                         </div>
                         <div className='flex-1'>
-                            <h1 className='text-md font-semibold pr-36'>
+                            <h3 className='text-md font-semibold pr-36'>
                                 {job.company}
-                            </h1>
+                            </h3>
                             <div className='flex justify-between gap-8'>
                                 <p className='flex-1 text-s font-thin'>{job.position}</p>
                                 <p className='flex-0 text-s font-thin w-24'>{job.date}</p>

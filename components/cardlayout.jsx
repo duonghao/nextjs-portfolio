@@ -6,9 +6,9 @@ const CardLayout = (props) => {
     <div className='p-4 border rounded-md'>
         <div className='flex items-center gap-4 mb-4'>
             <FontAwesomeIcon icon={props.icon} size='lg'/>
-            <h1 className='text-s font-semibold'>
+            <h2 className='text-s font-semibold'>
                 {props.title}
-            </h1>
+            </h2>
         </div>
         {props.children}
     </div>
